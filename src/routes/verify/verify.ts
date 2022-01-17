@@ -69,6 +69,7 @@ export const verifyHandler = async (
       user: {
         email: user.newEmail,
         newEmail: null,
+        emailVerified: true,
       },
     });
   } else if (type === 'signinPasswordless') {
